@@ -24,11 +24,20 @@ function App() {
           render={(props) => (<Welcome {...props} name={props.match.params.name} />)}
         />
 
-        <Route path='/clock' component={Clock} />
-        
-        <Route path='/contact' component={Contact} />
+        <Route 
+        path='/clock' 
+        component={Clock} 
+        />
 
-        <Route component={NoMatch} />
+        <Route 
+        path='/contact' 
+        component={Contact} 
+        />
+
+        <Route 
+        component={NoMatch} 
+        />
+        
       </Switch>
     </div>
   );
