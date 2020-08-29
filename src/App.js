@@ -25,6 +25,7 @@ function App() {
         />
 
         <Route path='/clock' component={Clock} />
+        
         <Route path='/contact' component={Contact} />
 
         <Route component={NoMatch} />
